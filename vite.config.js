@@ -1,10 +1,9 @@
 import { fileURLToPath, URL } from 'node:url'
-
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
-// https://vitejs.dev/config/
 export default defineConfig({
+  base: '/formulario_dinamico_vue/', // Defina o novo base URL aqui
   plugins: [vue()],
   resolve: {
     alias: {
@@ -12,3 +11,4 @@ export default defineConfig({
     }
   }
 })
+
